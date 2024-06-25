@@ -322,7 +322,7 @@ First, it is not recommended to run Apache Tomcat as user root, so we will creat
 
 .. code-block:: shell
 
-  VERSION=9.0.65; wget https://archive.apache.org/dist/tomcat/tomcat-9/v${VERSION}/bin/apache-tomcat-${VERSION}.tar.gz
+  VERSION=9.0.90; wget https://archive.apache.org/dist/tomcat/tomcat-9/v${VERSION}/bin/apache-tomcat-${VERSION}.tar.gz
 
 
 Once the download is complete, extract the tar file to the /opt/tomcat directory:
@@ -491,7 +491,7 @@ Let's externalize the ``GEOSERVER_DATA_DIR`` and ``logs``
   sudo chmod -Rf 775 /opt/data/logs
 
   # Download and extract the default GEOSERVER_DATA_DIR
-  GS_VERSION=2.24.2
+  GS_VERSION=2.24.3
   sudo wget "https://artifacts.geonode.org/geoserver/$GS_VERSION/geonode-geoserver-ext-web-app-data.zip" -O data-$GS_VERSION.zip
   
   sudo unzip data-$GS_VERSION.zip -d /opt/data/
